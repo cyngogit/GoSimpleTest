@@ -11,10 +11,18 @@
 .data2{
     color:darkslateblue;
 }
-.box-with-shadow{
- border: 1px solid;
- padding: 10px;
- box-shadow: 5px 10px #888;
- margin-bottom: 30px;
- margin-right: 5px;
+.box-with-shadow2{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #777;
+    margin-bottom: 30px;
+    margin-right: 5px;
 }
+.box-with-shadow{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 5px #888;
+    margin-bottom: 30px;
+    margin-right: 5px;
+   }
+   

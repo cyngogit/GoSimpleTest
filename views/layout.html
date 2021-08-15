@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <div class="header">
-        header ada di sini
+    <div class="box-with-shadow">
+        <a href="/" class="box-with-shadow">Home</a>
+        <a href="/second" class="box-with-shadow">Sub Paging</a>
+        <a href="/third?id=1" class="box-with-shadow">Try get from Query String</a>
+        <a href="/fourth" class="box-with-shadow">view data using map key</a>
+        <a href="/fifth" class="box-with-shadow">view data using struct</a>
+        <a href="/sixth" class="box-with-shadow">view data using json</a>
     </div>
 
     {{template "main" .}}

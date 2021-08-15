@@ -1,0 +1,20 @@
+.header {
+    margin-bottom: 30px;
+}
+
+.data {
+    color:darkmagenta;
+}
+.data1{
+    color:darkgreen;
+}
+.data2{
+    color:darkslateblue;
+}
+.box-with-shadow{
+ border: 1px solid;
+ padding: 10px;
+ box-shadow: 5px 10px #888;
+ margin-bottom: 30px;
+ margin-right: 5px;
+}

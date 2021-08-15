@@ -1,0 +1,24 @@
+{{template "layout"  .}}
+    {{define "main"}}
+
+    <div class="box-with-shadow">
+        {{ range .}}
+            {{if lt .Stock 3}}
+                <div class="data">
+                    {{.Name}} dijual harga otr {{.Price}}. Buruan {{.StockStatus}} sisa tinggal {{.Stock}} 
+                    
+                </div>
+            {{else}}
+                <div class="data1">
+                    {{.Name}} dijual harga otr {{.Price}}. Buruan sisa tinggal {{.Stock}} 
+                    
+                </div>
+            {{end}}
+        {{end}}
+    </div>
+    <div class="box-with-shadow">
+        <form action="/form" method="get">
+            <input type="submit" value="Tambah">
+        </form>
+    </div>
+{{end}}

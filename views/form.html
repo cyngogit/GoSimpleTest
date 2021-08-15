@@ -1,0 +1,28 @@
+{{ template "layout" .}}
+
+{{ define "main"}}
+
+<div class="box-with-shadow">
+    <form action="/fifth" method="POST">
+        <div class="box-with-shadow">
+            <label for="name">ID Produk</label>
+            <input type="text" name="ID" placeholder="ID produk" required>
+        </div>
+        <div class="box-with-shadow">
+            <label for="name">Nama Produk</label>
+            <input type="text" name="Name" placeholder="Nama Produk" required>
+        </div>
+        <div class="box-with-shadow">
+            <label for="name">Harga Produk</label>
+            <input type="text" name="Price" placeholder="Harga Produk" required>
+        </div>
+        <div class="box-with-shadow">
+            <label for="name">Stock</label>
+            <input type="text" name="Stock" placeholder="Ada berapa stock" required>
+        </div>
+        <div class="box-with-shadow">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+{{ end }}

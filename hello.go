@@ -4,20 +4,13 @@ import (
 	"log"
 	"net/http"
 
-	"example.com/hello/handler"
+	"example.com/hello/route"
 )
 
 func main() {
 	mux := http.NewServeMux()
 
-	mux.HandleFunc(handler.TestUrl, handler.TestHandler)
-	mux.HandleFunc(handler.SecondUrl, handler.SecondHandler)
-	mux.HandleFunc(handler.ThirdUrl, handler.ThirdHandler)
-	mux.HandleFunc(handler.FourthUrl, handler.FourthHandler)
-	mux.HandleFunc(handler.FifthUrl, handler.FifthHandler)
-	mux.HandleFunc(handler.SixthUrl, handler.SixthHandler)
-	mux.HandleFunc(handler.SeventhUrl, handler.SeventhHandler)
-	mux.HandleFunc(handler.FormUrl, handler.FormHandler)
+	route.SetupLink(mux)
 
 	fileServer := http.FileServer(http.Dir("assets"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))

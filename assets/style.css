@@ -11,18 +11,27 @@
 .data2{
     color:darkslateblue;
 }
-.box-with-shadow2{
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px #777;
-    margin-bottom: 30px;
-    margin-right: 5px;
-}
 .box-with-shadow{
     border: 1px solid;
-    padding: 10px;
-    box-shadow: 2px 5px #888;
+    padding: 16px 22px;
+    box-shadow: 2px 3px #888;
     margin-bottom: 30px;
     margin-right: 5px;
-   }
+    width: fit-content;
+}
+
+.menu {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: 1px solid;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+.menu:hover {
+    opacity: 0.8;
+}
+
    
